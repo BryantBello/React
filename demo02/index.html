@@ -1,0 +1,24 @@
+<!-- React File that uses an array to display content. Mixes HTML with JS -->
+<!-- Major takeaway is that we can incorporate Javascript inside of our JSX script. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/build/react.js"></script>
+    <script src="/build/react-dom.js"></script>
+    <script src="/build/browser.min.js"></script>
+</head>
+
+<body>
+    <div id="example"></div>
+    <script type="text/babel">
+        // We declare a generic array var names = ['Alice', 'Emily', 'Kate']; // ReactDOM.render displays the content ReactDOM.render( // Here we specify that we will be rendering a div
+        <div>
+            { // Then we use the basic Javascript "map" function to loop through the array // Map is a generic Javascript function. names.map(function (name) { // We then incorporate each element of the array in the "name" function. // Note that we can replace {name} with any Javascript variable // JSX allows us to incorporate Javascript content directly into HTML return
+            <div>Hello, {name}!</div>
+            }) }
+        </div>, // We then tell React to drop the contents into the "example" div. document.getElementById('example') );
+    </script>
+</body>
+
+</html>

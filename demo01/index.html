@@ -1,0 +1,25 @@
+<!-- Simple Hello World -->
+<!-- This code effectively just selects an element and renders text into it -->
+<!-- This is basically a React version of jQuery selection and appending -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This browser.min.js has all the code we need for babel and react -->
+    <!-- In the future, we will show students how to compile with Babel off-client -->
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+</head>
+
+<body>
+    // We will be deploying our content here
+    <div id="example"></div>
+    // Here we create JSX code (note the text/babel)
+    <script type="text/babel">
+        // Here we utilize the ReactDOM.render function to display the "Hello World" content // We select the ID as being the location for the render // Note the arguments for ReactDOM.render(CONTENT, ELEMENT) ReactDOM.render(
+        <h1>Hello, world!</h1>, document.getElementById('example') );
+    </script>
+</body>
+
+</html>
