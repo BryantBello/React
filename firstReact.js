@@ -3,7 +3,7 @@ class RobotItems extends React.Component {
     const topics = ["React", "JSX", "JavaScript", "Programming"];
     return (
       <div>
-        <h3>Topics I am interested in</h3>
+        <h3>Topics I am  very interested in</h3>
         <ul>
           {topics.map( topic => <li>{topic}</li>)}
         </ul>
