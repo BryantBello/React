@@ -56,7 +56,7 @@ var Service = React.createClass({
 
 var services = [
     { name: 'Web Development', price: 100 },
-    { name: 'Designs', price: 500 },
+    { name: 'Designs and Stuff', price: 500 },
     { name: 'Integration', price: 250 },
     { name: 'Training', price: 220 }
 ];
